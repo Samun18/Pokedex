@@ -1,0 +1,143 @@
+/* ---VARIABLES--- */
+:root {
+    ---primary-color: #dc2021;
+    --dark-color: #121212;
+    --white: #f5f5f5;
+    --grey: #7e7c7c;
+  
+    /* Fonts and typography */
+    --big-font: 2rem;
+    --medium-font: 1.5rem;
+    --normal-font: 1rem;
+    --small-font: 0.8rem;
+    --tiny-font: 0.75rem;
+  
+    /* Font weight */
+    --font-tiny: 300;
+    --font-normal: 400;
+    --font-medium: 600;
+    --font-bold: 700;
+  
+    /* Margins & Padding */
+    --sp-0-5: 0.5rem;
+    --sp-0-75: 0.75rem;
+    --sp-1: 1rem;
+    --sp-1-5: 1.5rem;
+    --sp-2: 2rem;
+    --sp-2-5: 2.5rem;
+    --sp-3: 3rem;
+  
+    /* z index */
+    --z-fixed: 1;
+    --z-modal: 2;
+  }
+@media screen and (min-width: 992px) {
+      :root {
+        --big-font: 2.5rem;
+        --medium-font: 2rem;
+        --normal-font: 1.25rem;
+        --small-font: 1rem;
+        --tiny-font: 0.8rem;
+      }
+    }
+    /* ---RESET--- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+} 
+
+.main {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px 30px 0 30px ;
+}
+
+.main__text {
+    padding: 0 auto;
+    
+}
+.main__text--red {
+    color: #dc2021;
+}
+
+.form {
+    position: relative;
+    height: 56px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.form__input {
+    height: 29px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+}
+.form__input:focus {
+    background-color: #dc2020a9;
+    color: var(--white);
+}
+.form__input::placeholder{
+    color: var(--grey);
+}
+.form__btn {
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.form__btn-svg {
+    height: 40px;
+}
+
+.containerCards {
+    margin: 0 auto;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: var(--sp-1);
+}
+
+/* ---PAGINATION--- */
+
+.containerP { 
+    
+    width: 100vw;
+    background-image: url('./src/assets/pokebola2.png');
+    padding: .1px;
+}
+@media screen and (min-width: 992px) {
+    .main__text {
+        font-size: x-large;
+    } 
+    .form {
+        margin-right: 70px;
+        display: flex;
+        align-items: center;
+        
+    }
+    .form__input{
+        height: 40px;
+        width: 200px;
+
+    }
+    .form__input::placeholder{
+        font-size: large;
+    }
+    .form__btn-svg {
+        height: 55px;
+       position: relative;
+       top: -7px;
+    }
+  }

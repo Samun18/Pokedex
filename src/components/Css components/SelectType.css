@@ -1,0 +1,25 @@
+.select {
+    
+    
+    background-color: #dc2020a9;
+    font-family: inherit;
+    text-align: start;
+    
+    color: #fff;
+    text-transform: capitalize;
+    width: 133px;
+    padding: 5px;
+    align-self: flex-end;
+    border-radius: 20px;
+    margin-right: 7px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 992px) {
+    .select{
+        margin-right: 91px;
+        width: 170px;
+        padding: 8px;
+        font-size: medium;
+    }
+  }
